@@ -9,7 +9,21 @@ git의 목적
 
 기본 명령어
 
-    + git log:커밋 로그
-    + git commit
-    + git status: 상태
-    + git 
+    - git init: 레포 initialize
+    - git log:커밋 로그
+    - git commit
+    - git status: 상태
+        --stat
+    - git add: filename 추가
+    - git commit : create version
+    - git diff: show changes
+    - git reset: 코드 폐기
+git에는
+Working tree, staging Area, Repository 가 있다.
+
+Working tree: 우리가 수정한 파일들
+Staging Area: 버전을 만들려고 하는 파일들
+Repository: 만들어진 버전
+
+### untracked files
+git add "filename" filename의 버전을 만들거니까 올려라
