@@ -46,7 +46,7 @@ Numbers
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fefcec94-a08a-418c-81f4-fa6ee40952d5/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fefcec94-a08a-418c-81f4-fa6ee40952d5/Untitled.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98c584e1-5734-422d-ae54-3f34a0793b29/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98c584e1-5734-422d-ae54-3f34a0793b29/Untitled.png)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98c584e1-5734-422d-ae54-3f34a0793b29/Untitl   d.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98c584e1-5734-422d-ae54-3f34a0793b29/Untitled.png)
 
 추정손익이 사실이라고 생각해서 요구하는 게 아니라 얼마나 깊게 고민한건가 본인들의 시나리오를 보는 것
 
