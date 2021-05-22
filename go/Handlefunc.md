@@ -22,4 +22,4 @@ func(l *LoginHandler) ServeHTTP{
 
 http.Handle("/Handle",&Loginhandler{})
 ```
-(추측) go에는 class가 없으니 이런식으로 struct를 작성해서 객체화시킨다.
+go에는 class가 없으니 이런식으로 struct를 작성해서 객체화시킨다.
