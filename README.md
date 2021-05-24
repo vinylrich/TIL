@@ -26,5 +26,6 @@ Type: 제목(Title)
 ## 커밋 방법
 ```
 title:< N Study >
-content:<간략한 내용 요약>
+subject: 공부한 주제
+content: 공부한 내용
 ```
