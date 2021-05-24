@@ -62,10 +62,10 @@ func add()*int{
 v:=add()
 ```
 process
-1. a 사라짐
-2. p 참조 사라짐
-3. v에 a 참조됨
-4. a와 p참조가 끊어짐
+1. p에 a 참조됨
+2. v와 p 참조
+3. v와 a 참조
+4. p와 a참조 사라짐
 5. p가 없어짐
 6. 결론적으로 v와 a가 연결이 되고,p가 사라진 형태를 가짐
 ```c
@@ -78,9 +78,16 @@ process
 }
 int *v=add()
 ```
+process
+1. p에 a 참조됨
+2. v와 p 참조
+3. v와 a 참조
+4. a사라짐,p사라짐
+5. 결론적으로 v가 아무것도 없는 값인 a를 참조하는 형태가 됨
+why? reference count가 없기 때문
 ### Reference Count의 문제점을 보완
 외딴섬: 외부의 참조 없이 내부에서만 참조하면 gc가 없애줌
  
 
 ***but!*** gc는 속도가 느림
-요즘 Thread를 이용하여 build과정에서 시간이 체감이 되지 않을정도로 조금씩 나눠서 collect함
+요즘 Multi Thread를 이용하여 build과정에서 시간이 체감이 되지 않을정도로 조금씩 나눠서 collect함
