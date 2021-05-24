@@ -1,5 +1,16 @@
 # Memory Garbage Collector(GC)
 
+
+메모리 구조
+
+1. code memory
+    - 실행할 프로그램의 코드 메모리
+2. data memory
+    - 전역변수,정적변수 메모리
+3. [stack memory](#stack-memory)
+    - 지역변수, 매개변수(함수)메모리
+4. heap memory
+    - 사용자가 직접 지정하는 메모리
 변수->메모리
 
 변수 선언-> 값을 담는 그릇 생성
@@ -39,6 +50,7 @@ func add(){
 중괄호 바깥으로 넘어가면 쓸모가 없어짐
 
 ### Reference Count(참조된 횟수)가 0이 되면 메모리를 지우는 것
+go의 경우
 ```go
 func add()*int{
     var a int
@@ -55,9 +67,20 @@ process
 3. v에 a 참조됨
 4. a와 p참조가 끊어짐
 5. p가 없어짐
-
+6. 결론적으로 v와 a가 연결이 되고,p가 사라진 형태를 가짐
+```c
+*int add(){
+    int a;
+    a=3
+    int* p
+    p=&a
+    return p
+}
+int *v=add()
+```
 ### Reference Count의 문제점을 보완
 외딴섬: 외부의 참조 없이 내부에서만 참조하면 gc가 없애줌
  
 
 ***but!*** gc는 속도가 느림
+요즘 Thread를 이용하여 build과정에서 시간이 체감이 되지 않을정도로 조금씩 나눠서 collect함
