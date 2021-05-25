@@ -1,5 +1,22 @@
 # Stack
-## Stack 구현 With Golang
+## Stack 구현 in Golang
+
+----
+목차
+1. [What is tree Stack?](#Stack이란?)
+2. [Code](#구현-및-분석)
+3. [Field of Application](#활용-분야) 
+____
+
+## Stack이란?
+Stack이란 쌓아올리다라는 의미를 가지고 있다.
+말 그대로 쌓아올리는 자료구조이다.
+Stack은 후입선출이라는 특징을 가지고 있다.
+![다운로드](https://user-images.githubusercontent.com/51067720/119442102-2fb88a80-bd62-11eb-8bb4-02b5105399bb.png)
+사진 출처:https://devuna.tistory.com/22
+
+___
+## 구현 및 분석
 
 stack.go
 ```go
@@ -59,3 +76,11 @@ func (l *LinkedList) PopBack() {
 	l.RemoveNode(l.Tail)
 }
 ```
+____
+## 활용 분야
+stack의 활용 분야는
+- 웹 브라우저 방문기록 (뒤로 가기) : 가장 나중에 열린 페이지부터 다시 보여준다.
+- 역순 문자열 만들기 : 가장 나중에 입력된 문자부터 출력한다.
+- 실행 취소 (undo) : 가장 나중에 실행된 것부터 실행을 취소한다.
+- 후위 표기법 계산
+- 수식의 괄호 검사 (연산자 우선순위 표현을 위한 괄호 검사)

@@ -1,6 +1,18 @@
 # Linkedlist
-## Linkedlist 구현 with Golang
+## Linkedlist 구현 in Golang
 
+---
+목차
+1. [What is Linkedlist란?](#Linedlist란?)
+2. [Code](#구현-및-분석)
+3. [Field of Application](#활용-분야)
+
+
+___
+## Linkedlist란?
+Linked List는 Array List와는 다르게 원소와 원소 간의 연결(link)을 이용해서 리스트를 구현한 것을 의미함. 그래서 이름도 linked list임.
+____
+## 구현 및 분석
 ```go
 type Node struct {
 	Next *Node
@@ -68,3 +80,11 @@ func (l *LinkedList) RemoveNode(node *Node) {
 
 - if node == node.Tail
 아까 생성한 node에서 Tail을 삭제한다고 하면 두 번째 조건문에 걸려 Tail이 삭제되고, 2가 테일이 된다.
+
+___
+## 활용분야
+
+LinkedList는 ArrayList와 많이 비교된다.
+<img width="410" alt="999A19335A02A3E730" src="https://user-images.githubusercontent.com/51067720/119442751-59be7c80-bd63-11eb-9147-2a58bcd52d51.png">
+
+사진출처:https://sycho-lego.tistory.com/17
