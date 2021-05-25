@@ -1,5 +1,13 @@
 # Tree BFS (Tree와 이어짐)
 
+## Tree BFS 구현 in Golang
+---
+목차
+1. [What is tree BFS?](#BFS란)
+2. [Code](#구현)
+3. [Analysis](#코드-분석)
+4. [Field of Application](#활용-분야) 
+_____
 ## BFS란?
 ### 너비 우선 탐색,Breadth First Search의 약자이다
 
@@ -8,7 +16,8 @@
 출처: https://developer-mac.tistory.com/64
 
 위 gif와 같은 프로세스로 진행된다.
-
+_____
+## 구현
 BFS는 queue로 구현할 수 있다.
 
 본격적으로 코드를 분석해보도록 하겠다.
@@ -27,7 +36,8 @@ func (t *Tree) BFS() {
 	}
 }
 ```
-
+______
+## 코드 분석
 ![화면 캡처 2021-05-22 191720](https://user-images.githubusercontent.com/51067720/119223087-67d98680-bb32-11eb-8c56-0ce5c6fd3a21.png)
 트리 구조가 위와 같다고 가정해보자.
 위 GIF처럼 BFS하려면 1,2,3,4,5,6,7,8,9,10 순으로 출력되어야 한다.
@@ -45,3 +55,6 @@ first, queue = queue[0], queue[1:]
 
 
 종합적으로 1,2,3,4,5,6,7,8,9,10가 출력된다.
+_____
+## 활용 분야
+활용분야:미로 찾기 등 최단거리를 구해야 할 경우

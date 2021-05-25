@@ -1,5 +1,13 @@
 # Tree DFS (Tree와 이어짐)
 
+## Tree DFS 구현 in Golang
+---
+목차
+1. [What is tree DFS?](#DFS란?)
+2. [Code](#구현)
+3. [Analysis](#코드-분석)
+4. [Field of Application](#활용-분야)
+____
 ## DFS란?
 ### 깊이 우선 탐색,Depth First Search의 약자이다
 
@@ -9,12 +17,14 @@
 출처: https://developer-mac.tistory.com/64
 
 위 gif와 같은 프로세스로 진행된다.
-
+_____
+## 구현
 DFS는 두 가지로 구현 할 수 있다.
-1. 재귀호출
-2. 스택
+1. [재귀호출](#재귀호출)
+2. [스택](#스택)
 
 본격적으로 코드를 보도록 하겠다.
+#### 재귀호출
 ```GO
 func (t *Tree) DFS1() {
 	DFS1(t.Root)
@@ -26,7 +36,9 @@ func DFS1(Node *TreeNode) {
 		DFS1(Node.Childs[i])
 	}
 }
-
+```
+#### 스택
+```go
 func (t *Tree) DFS2() {
 	s := []*TreeNode{}
 	s = append(s, t.Root)
@@ -42,7 +54,8 @@ func (t *Tree) DFS2() {
 	}
 }
 ```
-
+______
+## 코드 분석
 DFS1이 재귀호출,DFS2가 스택으로 구현한 DFS이다.
 
 재귀호출은 복습이 끝난 후 나중에 해석해보도록 하고 스택으로 구현한 DFS 코드를 해석하도록 하겠다.
@@ -67,3 +80,7 @@ last, s = s[len(s)-1], s[0:len(s)-1]
 
 
 종합적으로 Print하면 1,2,5,6,3,7,8,4,9,10의 순으로 Print된다.
+
+___
+## 활용 분야
+활용분야:DFS는 특정한 경로를 저장해둬야하는 문제에 적합(웹페이지)
