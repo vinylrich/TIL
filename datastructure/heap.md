@@ -1,4 +1,16 @@
+# heap
+## heap 구현 in Golang
+_____
+1. [What is Heap](#Heap란?)
+2. [Code](#구현-및-분석)
+3. [Field of Application](#활용-분야)
 
+___
+## Heap란?
+___
+## 구현 및 분석
+___
+## 활용 분야
 heap을 이용하여
 
 시뮬레이션 시스템
@@ -8,7 +20,7 @@ heap을 이용하여
 등을 할 수 있는 priority queue를 구현 할 수 있다.
 
 
-max heap,min heap
+max heap,min heap 
 추가(add,push):
 맨 마지막 슬라이스에 붙임
 부모와 비교
@@ -17,3 +29,7 @@ max heap,min heap
 root노드를 없앰
 root의 child의child의child의....을 root로 만듦
 root와 child와 비교
+
+heap 정렬
+
+heap 속도
