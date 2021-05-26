@@ -1,6 +1,18 @@
 # Hash
-## Hash 구현 with Golang
+## Hash 구현 in Golang
 
+___
+1. [What is Hash](#Hash란?)
+2. [Code](#구현-및-분석)
+3. [Field of Application](#활용-분야)
+
+___
+
+## Hash
+
+____
+
+## 구현 및 분석
 내가 짠 코드
 Hash.go
 ```go
@@ -15,7 +27,7 @@ func (h *Hash) DoHash(A, B int) {
 		if i == 0 {
 			h.H[i] = int(h.Str[i]) % B //1번인덱스에
 		} else {
-			h.H[i] = ((h.H[i-1] * A) + int(h.Str[i])) % B
+			h.H[i] = ((h.H[i-1] * A) + int(h.Str[i])) %B
 			if i == len(h.Str)-1 {
 				h.Final = h.H[i]
 			}
@@ -37,6 +49,7 @@ func main() {
 ```
 
 강좌에서 짠 Hash
+
 hash.go
 ```go
 package dataStruct
@@ -61,3 +74,6 @@ func main() {
 	fmt.Println("abcd = ", dataStruct.DoHash("abcde"))
 }
 ```
+___
+## 활용 분야
+
