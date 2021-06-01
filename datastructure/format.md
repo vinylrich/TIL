@@ -3,7 +3,7 @@
 
 ---
 목차
-1. [What is tree x란?](#x란?)
+1. [What is x](#x란?)
 2. [Code](#구현)
 3. [Analysis](#코드-분석)
 4. [Field of Application](#활용-분야)
