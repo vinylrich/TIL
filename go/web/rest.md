@@ -150,6 +150,8 @@ func updateUserHandler(w http.ResponseWriter, r *http.Request) {
 ____
 
 ## DELETE
+`	mux.HandleFunc("/users/{id:[0-9]+}", deleteUserHandler).Methods("DELETE")`
+users/id delete 핸들러는 id값에 해당하는 usermap을 delete하는 핸들러이다.
 ```go
 func deleteUserHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)

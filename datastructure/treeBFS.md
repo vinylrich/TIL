@@ -3,7 +3,7 @@
 ## Tree BFS 구현 in Golang
 ---
 목차
-1. [What is tree BFS?](#BFS란)
+1. [What is tree BFS?](#BFS란?)
 2. [Code](#구현)
 3. [Analysis](#코드-분석)
 4. [Field of Application](#활용-분야) 

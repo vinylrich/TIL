@@ -96,6 +96,15 @@ Low Tech dept
 상태를 없애버리고 기능만 만들자
 상태는 외부에서 가져오기
 
-micro Server serverless Function language
-게임:ecs
-웹:mvc
+- micro Server
+- serverless 
+- Functional language
+- 게임:ecs
+- 웹:mvc
+
+ 서로 분야는 다르지만 근본적인 기능들을 분리하여 하나의 서비스로 제공한다는 것은 바뀌지 않는다.
+
+
+ Functional language
+ 기능o 상태x
+ 순수하게 기능만 가져가자
