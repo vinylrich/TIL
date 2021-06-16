@@ -46,3 +46,20 @@ func main() {
 ```json
 {"Breed":"pug","WeightKg":0,"Size":{"Height":0,"Width":0}}
 ```
+
+```go
+func (f *fooHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	user := new(User)
+	err := json.NewDecoder(r.Body).Decode(user) //data받아오기
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		fmt.Fprint(w, "Bad Request", err)
+		return
+	}
+	user.CreateAt = time.Now()
+
+	data, _ := json.Marshal(user) //
+	w.Header().Add("content-type", "application/json")
+	w.WriteHeader(http.StatusCreated)
+	fmt.Fprint(w,string(data))
+```	
