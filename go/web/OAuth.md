@@ -16,6 +16,9 @@ ___
 google이나 facebook같은 기업에서 대신 로그인을 구현해주는 기능이다. 
 
 
+___
+## 구현
+google 기준으로 oauth api키를 발급받았다.
 
 1. client가 요청
 2. server에서 oath요청
@@ -25,9 +28,7 @@ google이나 facebook같은 기업에서 대신 로그인을 구현해주는 기
 6. 사후에 refresh key와 api key를 알려주는데, 이를 통해서 회원정보를 에 접근 할 수 있음.
     - refresh key: 무한정 서버를 열어줄 수 없기 때문에 회원정보에 다시 접근 할 때 필요한 키
     - api key: 회원정보 접근
-___
-## 구현
-google 기준으로 oauth api키를 발급받았다.
+
 ___
 ## 코드 분석
 
