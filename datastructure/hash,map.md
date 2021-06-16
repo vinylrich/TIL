@@ -15,8 +15,13 @@ dictionary와 같음.
 
 hash는 어떤 값 a를 나오면 b가 출력되는 구조로 map과 유사하다
 
+sin연산
+modular연산
 
+One-way Function
+출력을 알면 입력은 무한대의 후보군이 있음
 ___
+
 ## 구현
 
 ___
