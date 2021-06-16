@@ -5,7 +5,10 @@
 2. 사용자가 입력한 비밀번호는 암호화되어 DB에 저장된 비밀번호화 같은지 판별
 3. 판별 결과가 참이면 Client에 access token 전송
 4. 로그인 성공 후 access token을 request에 넣어서 서버에 전송하면 로그인 유지 및 서비스 사용
+![image](https://user-images.githubusercontent.com/51067720/122183541-49af3e00-cec6-11eb-8b41-42895a99f356.png)
+사진 출처:https://velog.io/@ehdrms2034/Access-Token-%EC%A0%80%EC%9E%A5-%EC%9C%84%EC%B9%98%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0
 ____
+
 ## athentication과 authorization(허가)
 
 ## athentication(인증)
@@ -15,7 +18,9 @@ athentication이란 login-process에서 2,3번에 해당하는 행위이다.
 
 즉, 라우터에서 컨트롤러가 호출되고, 컨트롤러 내 인증 미들웨어에서 DB에 저장된 비밀번호화 같은지 판별하는 과정과, 판별 결과가 참이면 client에 access token을 전송하는 과정을 authentication이라고 한다.
 
-이 access token을 생성 할 때 자주 사용되는 것이 JWT(JSON WEB TOKEN)이다.
+이 access token을 생성 할 때 자주 사용되는 것이 JWT(JSON WEB TOKEN),서버 기반 인증(session ,cookie) 등이 있다.
+
+여기서는 JWT를 알아볼 것이다.
 
 JWT는 CLIENT와 SERVER간에 유저 정보를 담은 JSON 데이터를 암호화 후 주고 받는 방법이다.
 
