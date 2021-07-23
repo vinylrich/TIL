@@ -62,7 +62,7 @@ IR모음
 
 [한국IR협의회](http://www.kirs.or.kr/support/04.html)
 
-**지피지기는 백전불패**
+**지피지기는 백전불태**
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99635bb9-a579-4721-9102-fd915096c350/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99635bb9-a579-4721-9102-fd915096c350/Untitled.png)
 
