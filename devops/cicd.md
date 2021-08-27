@@ -3,7 +3,7 @@
 ## What is CI
 
 ### 정의
-CI(Continuous Integration,지속적 통합)의 정의는 지속적으로 퀄리티 컨트로를 적용하는 프로세스를 실행하는 것이다.
+CI(Continuous Integration,지속적 통합)의 정의는 지속적으로 퀄리티 컨트롤를 적용하는 프로세스를 실행하는 것이다.
 
 ### 예시
 ci의 예시를 들면
