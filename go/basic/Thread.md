@@ -38,7 +38,7 @@ kernel thread: os가 제공하는 기본적인 thread
 2. 그러니 os thread를 최소한으로 사용
 
 3. go 키워드를 사용하면 cpu갯수와 가깝게 os thread를 만들고 각 os를 잘게 잘라서 여러개의 go thread를 만듦
-4. go 내부에서 os thread kernel thread 를 알아서 할당해주기 때문에 thread 개수에 상관하지 않아도 된다.
+4. go 내부에서 os thread kernel thread 를 알아서 할당해주기 때문에 개발자는 thread 개수에 상관하지 않아도 된다.
 
 ___
 ## vs c++,c#,java
