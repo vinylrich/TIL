@@ -10,5 +10,10 @@ CORS는 (Cross-Origin Resource Sharing)의 약자로 추가 HTTP HEADER를 사�
 
 EX) 30.45.65.223에 API SERVER를 띄웠는데, 20.46.43.220에서 30.45.65.223 작업을 요청하려고 할 때 추가 HTTP HEADER를 사용해서 다른 DOMAIN에서 접근 할 수 있는 권한을 부여해야한다.
 
+
+그 해더는 바로바로
+
+`ACCESS-CONTROL-ALLOW-ORIGIN`이다
+
 golang gin-gonic에서는 CORSMiddleware를 통해서 해결 할 수 있다.
 
