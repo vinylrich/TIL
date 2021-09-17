@@ -4,7 +4,7 @@
 
 JWT 인증 방식의 프로세스는 
 
-CLIENT LOGIN -> 서버에서 사용자가 맞는지 판단-> 맞으면 ACCESS TOKEN을 RESPONSE해주고, 이를 CLIENT 브라우저의 로컬스토리지에 저장한다. 그리고 요청 시 저장된 TOKEN을 매 REQUEST마다 
+CLIENT LOGIN -> 서버에서 사용자가 맞는지 판단-> 맞으면 ACCESS TOKEN을 RESPONSE해주고, 이를 CLIENT 브라우저의 로컬스토리지에 저장한다. 그리고 client에서는 요청 시 저장된 TOKEN을 매 REQUEST마다 헤더에 넣어 server에서 이를 검증한다.
 ____
 ## Session 인증 방식
 SESSION 인증 방식의 프로세스는  
@@ -13,7 +13,7 @@ CLIENT LOGIN-> 서버에서 사용자가 맞는지 판단-> 세션을 식별하�
 
 해당 사이트에 대한 모든 REQUEST에 SESSION ID를 쿠키에 담아 전송
 ____
-
+    
 ## 정리
 정리해보자면, 
 세션 방식은 쿠키에 저장되어 매 HTTP요청마다 포함되어 로그인 구현에 용이하다.
