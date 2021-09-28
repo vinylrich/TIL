@@ -48,3 +48,10 @@ ON Reservation.Name = Customer.Name
 
 WHERE ReserveDate > '2016-02-01';
 ```
+
+
+거의 이 두 개만 사용하면 실무에서 발생하는 문제를 해결할 수 있다.
+
+추가적으로 
+
+OUTER JOIN이 있고 어떤식으로 동작하는지만 알면 된다.
