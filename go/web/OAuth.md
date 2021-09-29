@@ -58,3 +58,18 @@ POST Body 정보: code=코드정보, client_id=클라이언트-아이디, client
 7. 이런 엑세스 토큰과 리프레시 토큰은 브라우저의 캐시로 저장하거나 redis같은 세션 캐시에 저장할 수 있다.
 ___
 
+전체적인 플로우는 이러하다, 하지만 백엔드 단에서 해야 할 일은 이거보다 적다
+![image](https://user-images.githubusercontent.com/51067720/135261924-5be5c1fc-b649-470f-ac49-5562c17c6fe8.png)
+
+https://accounts.google.com/o/auth2/token?code=
+
+1. 클라이언트 소셜 로그인
+2. google에서 클라이언트로 authorization code 발급
+3. 프론트엔드에서 백엔드로 code를 넘긴다.
+4. 백엔드에서는 이 code를 가지고 google에 accesstoken 요청을 하고 google에서는 accesstoken을 발급해준다.
+5. 백엔드에서 이 accesstoken을 가지고 google에 유저 정보를 요청한다.
+6. 또한 이 유저 정보를 사용하여 jwt 토큰을 발급한다.
+7. 클라이언트는 이 jwt토큰을 받고 매 요청시 헤더에 jwt토큰을 백엔드에 보내준다.(인가)
+8. 백엔드는 토큰 검증 후 응답하고 만료됐으면 재발급해준다.
+
+쿼리 파라미터로 code를 account에 요청하여 accesstoken을 발급해주고, 서버에서는 이 accesstoken을 사용하여 유저의 정보를 요청한다.
