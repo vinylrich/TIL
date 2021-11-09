@@ -1,21 +1,24 @@
-# Restful api
-## Restful api in golang
+# REST
+## REST
 
 ---
 목차
-1. [What is Restful api?](#Restful-api란?)
+1. [what is REST](#Rest란?)
 2. [GET](#GET)
 3. [POST](#POST)
 4. [PUT](#PUT)
 5. [DELETE](#DELETE)
 
 ___
-## Restful-api란?
+## Rest란?
 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미.
 ![image](https://user-images.githubusercontent.com/51067720/120105299-524c0880-c193-11eb-9af6-e4ca01bfbbcc.png)
 사진출처:https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
 
-한 사진으로 표현하자면 저 사진이 더할나위 없다.
+웹에 존재하는 모든 자원(문서, 이미지, 동영상 등)에 고유한 URI를 부여해 활용하는 것으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법론
+
+
+HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고, HTTP Method(POST, GET, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
 
 ___
 ## GET
